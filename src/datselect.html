@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    console.log('hihi');
+</script>
+<script src="./data.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        
+
+    </div>
+    
+</body>
+    <script>
+        console.log(data.title)
+        // document.getElementById('wrapper').innerHTML = '<p style="color:blue;">안녕하세요.</p>';
+        // document.getElementById('wrapper').innerHTML = '<p style="color:blue;">반갑습니다.</p>';
+        // data.js의 const data 를 이용해서
+        // 선택적으로 데이터 뿌려주기 
+       
+        const data2 = [
+            {
+                name : 'jj',
+                description : 'its description'
+            },
+            {
+                name : 'gg',
+                description : 'des2'
+            }
+            
+        ];
+        let str = '';
+        data.forEach((d) => {
+            str += '<p>'+d.title+'</p>'
+                    + '<a href="'+d.url+'">'+d.url+'</a>'
+                    + '<hr/>'
+                    // + '<img src="'+d.urlToImage+'/>'
+        });
+       
+        document.getElementById('wrapper').innerHTML = str;
+    </script>
+</html>

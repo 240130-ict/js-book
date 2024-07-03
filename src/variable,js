@@ -1,0 +1,23 @@
+// 한줄 주석
+/*
+여러 줄 주석
+*/
+
+/*const callback = ()=>{
+    console.log('2초 후에 실행됩니다.');
+    setTimeout(callback,2000);
+}*/
+
+/*setInterval(()=>{
+    console.log('2초마다 실행됩니다.');
+},2000);*/
+
+function func(){
+    
+    setTimeout(()=>{
+    console.log('hello');
+    },3500);
+   
+}
+
+func();
